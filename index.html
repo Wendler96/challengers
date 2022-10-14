@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Codificador de Textos</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	</head>
+	<body>
+		<header>
+			<img class="logo-alura" src="vector.png" alt="logo da Alura">
+		</header>
+		<main>
+			<section>
+				<textarea class="textarea1" cols="70" rows="10" placeholder="Digite sua mensagem..."></textarea>	
+			</section>
+				<div>
+					<img src="simbolo.png" alt="Símbolo de Exclamação">
+					<p class="aviso">Apenas letras minúsculas e sem acento.</p>
+				</div>
+				<div>
+					<button class="botao-criptografar" onclick="btnEncriptar()">Criptografar</button>
+					<button class="botao-descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+				</div>
+			<section>
+				<textarea class="textarea2" cols="70" rows="10"></textarea>
+				<div>
+					<button class="copiar" onclick="btncopiar()">Copiar</button>
+				</div>
+				<div>
+					<img class="lupa" src="nenhumamensagem.png" alt="Nenhuma mensagem encontrada">
+					<p class="msg1">Nenhuma mensagem encontrada</p>
+					<p class="msg2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+				</div>
+			</section>
+		</main>	
+		<footer>
+			<p class="copyright">&copy; Developed by Wendler in partnership with Oracle Next Education/Alura - 2022</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
